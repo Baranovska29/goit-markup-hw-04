@@ -145,11 +145,17 @@ border-bottom: 1px solid #E7E9FC;
     background-color: #4D5AE5;
     color: #FFFFFF;
     border: 1px solid transparent;
+    box-shadow: 0 2px 2px 0 #000000
+    12%, 0 2px 1px 0 #000000
+    8%;
 }
 .section-btn:focus{
     background-color: #404BBF;
     color: #FFFFFF;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
+    box-shadow: 0 2px 2px 0 #000000
+    12%, 0 2px 1px 0 #000000
+    8%; 
 }
 
     /* --------------main--------- */
@@ -162,7 +168,7 @@ border-bottom: 1px solid #E7E9FC;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/main.bg.jpg);
-    
+    width: 1440px;
 }
 
 .main-title {
@@ -214,7 +220,29 @@ border-bottom: 1px solid #E7E9FC;
  .wraper-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
  }
+ .wrapper-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.wraper-soc-item {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+.wraper-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
 .wrapper-list { 
     display: flex;
     gap: 24px;
@@ -281,15 +309,29 @@ border-bottom: 1px solid #E7E9FC;
 
 /* ------------team----------- */
 .team {
-    padding: 120px 0 
+    padding: 120px 0;
+    background-color: #F4F4FD
 }
 .team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.team {
-    background-color: #F4F4FD
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: block;
 }
 .team-block {
     background-color: var(--first-background);
@@ -317,6 +359,10 @@ border-bottom: 1px solid #E7E9FC;
 .team-block {
     width: calc(100%-72px)/4;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 #2E2F42
+    8%,
+    0 1px 1px 0 #2E2F42
+    16%;
 }
 .team-item {
     font-weight: 500;
@@ -332,7 +378,51 @@ border-bottom: 1px solid #E7E9FC;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.customers {
+    padding: 120px 0;
+}
+.customers-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.customers-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+    min-width: 183px;
     
+    
+}
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: calc(100% - 120px) / 6;
+    height: 88px;
+    margin-top: 72px;
+}
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers-soc-icon {
+    width: 164px;
+    height: 88px;
 }
 
 .cards-list {
@@ -345,6 +435,9 @@ border-bottom: 1px solid #E7E9FC;
 .cards-item {
     background-color: var(--first-background);
      width: calc((100% - 48px) / 3);
+}
+.cards-item:hover {
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-title {
     font-weight: 500;
@@ -371,6 +464,11 @@ border-bottom: 1px solid #E7E9FC;
     background: var(--second-background);
     padding-top: 100px;
     padding-bottom: 100px;
+    
+    
+}
+.footer-container {
+   display: flex;
 }
 
 .footer-text {
@@ -379,6 +477,7 @@ border-bottom: 1px solid #E7E9FC;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
+    margin-right: 120px;
     
 }
 .logo-footer {
@@ -389,9 +488,40 @@ border-bottom: 1px solid #E7E9FC;
     color: #F4F4FD;
 
 }
+.footer-soc-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-background);
+    margin-bottom: 16px;
+}
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
 
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: block;
+}
 
+.footer-soc-icon {
+}
+.footer-composition {
 
+}
+.footer-soc {
+
+}
 
 
 
