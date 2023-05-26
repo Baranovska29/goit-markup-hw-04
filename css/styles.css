@@ -331,7 +331,9 @@ border-bottom: 1px solid #E7E9FC;
     height: 100%;
     background-color: #4D5AE5;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .team-block {
     background-color: var(--first-background);
@@ -423,6 +425,7 @@ border-bottom: 1px solid #E7E9FC;
 .customers-soc-icon {
     width: 164px;
     height: 88px;
+    padding: 16px 32px;
 }
 
 .cards-list {
@@ -511,17 +514,16 @@ border-bottom: 1px solid #E7E9FC;
     height: 100%;
     background-color: #4D5AE5;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-soc-icon {
+    width: 24px;
+    height: 24px;
 }
-.footer-composition {
 
-}
-.footer-soc {
-
-}
 
 
 
